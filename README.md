@@ -6,19 +6,26 @@ This is a simple Java program that tracks hand movement using OpenCV. It capture
 
 1. Java 11 or higher
 2. Maven
+3. Eclipse IDE with M2E (Maven Integration) plugin
 
-## Setup Instructions
+## Setup in Eclipse
 
-1. Clone this repository
-2. Build the project:
-   ```bash
-   mvn clean package
-   ```
+1. Open Eclipse
+2. Go to File -> Import -> Maven -> Existing Maven Projects
+3. Select the root directory of this project
+4. Click Finish
+5. Wait for Maven to download dependencies
 
 ## Running the Program
 
-Run the program with:
+### In Eclipse:
+1. Right-click on the project
+2. Select Run As -> Java Application
+3. Select `com.example.HandTracker` as the main class
+
+### From Command Line:
 ```bash
+mvn clean package
 mvn exec:java
 ```
 
